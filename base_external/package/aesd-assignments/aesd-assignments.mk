@@ -30,7 +30,13 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/usr/bin/
+<<<<<<< HEAD
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/
+=======
+	#adding aesd socket executable to /usr/bin
+	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/
+	#adding aesdsocket-start-stop script to /etc/init.d/S99aesdsocket
+>>>>>>> 838871407ccd519fb34064e0a5883bf7eb1aba90
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop.sh $(TARGET_DIR)/etc/init.d/S99aesdsocket
 endef
 
