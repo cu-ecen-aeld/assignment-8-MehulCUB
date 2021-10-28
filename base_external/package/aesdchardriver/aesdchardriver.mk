@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-#TODO: reference of assignment 7 git contents
+#TODO: reference of assignment 3 git contents
 
 AESDCHARDRIVER_VERSION = aadf64f1f27391708126b954ffea5a72677ff192
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
@@ -15,7 +15,7 @@ AESDCHARDRIVER_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-MehulC
 AESDCHARDRIVER_SITE_METHOD = git
 AESDCHARDRIVER_GIT_SUBMODULES = YES
 AESDCHARDRIVER_MODULE_SUBDIRS = aesd-char-driver/
-# adding scull load, unload and misc-modules load and unload scripts
+# adding AESD char driver
 define AESDCHARDRIVER_INSTALL_TARGET_CMDS
 
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(TARGET_DIR)/usr/bin
